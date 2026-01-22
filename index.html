@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Styles Demo</title>
+
+    <style>
+        /* ===== BODY BACKGROUND & FONT ===== */
+        body {
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* ===== MAIN CONTAINER ===== */
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #333;
+            width: 70%;
+            margin: auto;
+        }
+
+        /* ===== HEADINGS (COLORS + TEXT EFFECTS) ===== */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        h2 {
+            color: #0066cc;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 5px;
+        }
+
+        /* ===== PARAGRAPH STYLING ===== */
+        p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* ===== BOX WITH BORDERS ===== */
+        .box {
+            background-color: #f9f9f9;
+            border: 3px dashed #ff5733;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        /* ===== BUTTON STYLING ===== */
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* ===== TEXT EFFECTS ===== */
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .italic-text {
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS3 Styling Demo</h1>
+
+        <h2>Text and Font Styles</h2>
+        <p>
+            This paragraph demonstrates basic <span class="highlight">CSS3 font styling</span>
+            including font family, color, and spacing.
+        </p>
+        <p class="italic-text">
+            This text uses italics and underline effects.
+        </p>
+
+        <h2>Border and Background Styles</h2>
+        <div class="box">
+            This box shows a dashed border, background color, padding,
+            margin, and rounded corners using CSS3.
+        </div>
+
+        <h2>Button with Hover Effect</h2>
+        <button class="btn">Click Me</button>
+    </div>
+
+</body>
+</html>
